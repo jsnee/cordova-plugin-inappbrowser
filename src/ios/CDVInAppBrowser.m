@@ -492,13 +492,13 @@
     [self.view sendSubviewToBack:self.webView];
 
     self.webView.delegate = _webViewDelegate;
-    self.webView.backgroundColor = [UIColor whiteColor];
+    self.webView.backgroundColor = [UIColor blackColor];
 
     self.webView.clearsContextBeforeDrawing = YES;
     self.webView.clipsToBounds = YES;
     self.webView.contentMode = UIViewContentModeScaleToFill;
     self.webView.multipleTouchEnabled = YES;
-    self.webView.opaque = YES;
+    self.webView.opaque = NO;
     self.webView.scalesPageToFit = NO;
     self.webView.userInteractionEnabled = YES;
 
