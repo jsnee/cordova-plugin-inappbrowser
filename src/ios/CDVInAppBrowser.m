@@ -73,6 +73,8 @@
 
 - (void)open:(CDVInvokedUrlCommand*)command
 {
+    [[UINavigationBar appearance] setBarTintColor:UIColorFromRGB(0x002c5f)];
+
     CDVPluginResult* pluginResult;
 
     NSString* url = [command argumentAtIndex:0];
