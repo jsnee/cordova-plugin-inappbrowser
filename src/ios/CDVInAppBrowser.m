@@ -986,13 +986,15 @@
 
 - (void) viewDidLoad {
 
-    // CGRect frame = [UIApplication sharedApplication].statusBarFrame;
+    CGRect frame = [UIApplication sharedApplication].statusBarFrame;
 
     // simplified from: http://stackoverflow.com/a/25669695/219684
 
-    // UIToolbar* bgToolbar = [[UIToolbar alloc] initWithFrame:frame];
-    // bgToolbar.barStyle = UIBarStyleDefault;
-    // [self.view addSubview:bgToolbar];
+    UIToolbar* bgToolbar = [[UIToolbar alloc] initWithFrame:frame];
+    bgToolbar.barStyle = UIBarStyleDefault;
+    bgToolbar.translucent=NO;
+    bgToolbar.barTintColor=[UIColor redColor];
+    [self.view addSubview:bgToolbar];
 
     [super viewDidLoad];
 }
