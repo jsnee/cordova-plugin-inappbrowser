@@ -494,7 +494,7 @@
     [self.view sendSubviewToBack:self.webView];
 
     self.webView.delegate = _webViewDelegate;
-    self.webView.backgroundColor = [UIColor blackColor];
+    self.webView.backgroundColor = UIColorFromRGB(0x002c5f);
 
     self.webView.clearsContextBeforeDrawing = YES;
     self.webView.clipsToBounds = YES;
@@ -587,7 +587,7 @@
 
     [self.toolbar setItems:@[self.closeButton, flexibleSpaceButton, self.backButton, fixedSpaceButton, self.forwardButton]];
 
-    self.view.backgroundColor = [UIColor blackColor];
+    self.view.backgroundColor = UIColorFromRGB(0x002c5f);
     [self.view addSubview:self.toolbar];
     [self.view addSubview:self.addressLabel];
     [self.view addSubview:self.spinner];
