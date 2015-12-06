@@ -993,7 +993,7 @@
     UIToolbar* bgToolbar = [[UIToolbar alloc] initWithFrame:frame];
     bgToolbar.barStyle = UIBarStyleDefault;
     bgToolbar.translucent = NO;
-    bgToolbar.barTintColor = UIColorFromRGB(0x002c5f);
+    bgToolbar.barTintColor = UIColorFromRGB(0x001a39);
     [self.view addSubview:bgToolbar];
 
     [super viewDidLoad];
