@@ -991,7 +991,7 @@
     // simplified from: http://stackoverflow.com/a/25669695/219684
 
     UIToolbar* bgToolbar = [[UIToolbar alloc] initWithFrame:frame];
-    bgToolbar.frame = CGRectMake(0, 0, MAX(self.webView.frame.size.width, self.webView.frame.size.height), frame.size.width);
+    bgToolbar.frame = CGRectMake(0, 0, 3000, frame.size.width);
     bgToolbar.barStyle = UIBarStyleDefault;
     bgToolbar.translucent = NO;
     bgToolbar.barTintColor = UIColorFromRGB(0x001a39);
