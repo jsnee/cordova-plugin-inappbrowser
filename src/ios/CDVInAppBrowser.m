@@ -990,8 +990,7 @@
 
     // simplified from: http://stackoverflow.com/a/25669695/219684
 
-    UIToolbar* bgToolbar = [[UIToolbar alloc] initWithFrame:frame];
-    bgToolbar.frame = CGRectMake(0, 0, 3000, frame.size.height);
+    UIToolbar* bgToolbar = [[UIToolbar alloc] initWithFrame: CGRectMake(0, 0, 3000, frame.size.height)];
     bgToolbar.barStyle = UIBarStyleDefault;
     bgToolbar.translucent = NO;
     bgToolbar.barTintColor = UIColorFromRGB(0x001a39);
